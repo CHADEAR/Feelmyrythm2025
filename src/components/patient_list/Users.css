@@ -1,0 +1,16 @@
+.bg1 {
+    background-color: #e4c5c5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.list {
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+}
