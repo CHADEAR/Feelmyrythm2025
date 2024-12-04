@@ -1,4 +1,4 @@
-.container3{
+.container31{
     width: 100%;
     height: 70vh;
     display: grid;
@@ -55,4 +55,9 @@
 .box-con3 p{
     display: flex;
     margin-left: 50px;
+}
+
+.img-box-con3 img {
+    max-width: 100%; /* ทำให้ภาพพอดีกับคอนเทนเนอร์ */
+    height: auto;
 }

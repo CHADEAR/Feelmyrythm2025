@@ -40,7 +40,7 @@ const HowItWorksSection = () => {
         </div>
       </div>
     </div>
-    
+  ); // ปิด return statement อย่างถูกต้อง
 };
 
 export default HowItWorksSection;

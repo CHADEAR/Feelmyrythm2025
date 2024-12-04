@@ -3,7 +3,7 @@ import React from 'react';
 
 const ExplanSection = () => {
   return (
-    <div className="container2">
+    <div className="container21">
       <div className="box-con2">
         <div className="bpm-box group-box-item">
           <h4>BPM</h4>

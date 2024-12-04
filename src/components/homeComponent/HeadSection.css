@@ -1,4 +1,4 @@
-.container1{
+.container11{
     width: 100%;
     height: 60vh;
     display: grid;
@@ -23,13 +23,13 @@
 .right-con1{
     width: 100%;
     height: 100%;
-    /* background-image: url('../pic/con1pic.jpg'); */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/headpic.jpg?alt=media&token=67cabd6a-518e-4977-9f49-a1b16661557a');
     background-size: cover; 
-    background-position:inherit; 
+    background-position:center; 
     background-repeat: no-repeat; 
 }
 
-.container2{
+.container21{
     width: 100%;
     height: 30vh;
     background: #2A3863;

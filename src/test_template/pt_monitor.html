@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pt_monitor.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>patient monitor</title>
+</head>
+<body>
+    
+    <div class="container1">
+        <div class="infor">
+            <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/user%20information%20icon.webp?alt=media&token=b9b06d1e-29cb-4ea1-b75b-75d9cd4befe4" class="userPic">
+            <p>ชัชชญา สุวรรณจินดา</p>
+            <p>Female&ensp;&ensp;Age&ensp;:&ensp; 20</p>
+            <div class="feedtx">
+                <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/record%20icon.png?alt=media&token=3e2a2a48-bd16-4b62-8f9d-6e070dd30185" class="feedbk">&ensp;
+                <span>Feedback</span>
+            </div>
+            <div class="feedbox">
+    
+            </div>
+    
+        </div>
+        <div class="record">
+            <div class="recordtx">
+                <i class='bx bxs-folder-open'></i>
+                <span>Record</span>
+            </div>
+            <div class="recordbox">
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="rightSide">
+        <div class="container2">
+            <div class="box box1">
+                <h3>Heart Rate</h3>
+                <div class="showrate">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/heart%20rate%20icon.png?alt=media&token=c178e3cf-9260-4d65-b27d-6f77de1d88fb" class="hrPic">
+                    <span>100 <sub>BPM</sub></span>
+                </div>
+                <p>analysis result</p>
+            </div>
+            <div class="box box2">
+                <h3>Spo2</h3>
+                <div class="showperc">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/SpO2%20icon.png?alt=media&token=84b2634e-80ff-4d24-b86d-55260add2983" class="spo2Pic">
+                    <span>98 <sub>%</sub></span>
+                </div>
+                <p>analysis result</p>
+            </div>
+            <div class="box box3">
+                <h3>PaO2</h3>
+                <div class="showmmHg">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/PaO2%20icon.png?alt=media&token=88d4726c-5dfa-4d40-aacb-0d70288e23ea" class="Pa02Pic">
+                    <span>97 <sub>mmHg</sub></span>
+                </div>
+                <p>analysis result</p>
+            </div>
+    
+        </div>
+    
+        <div class="container3">
+            <nav class="navg">
+                <div class="leftnav">
+                    <span>Resting Heart Rate</span>
+                </div>
+                <ul class="rightnav">
+                    <li><a href="#"></a>day</li>
+                    <li><a href="#"></a>week</li>
+                    <li><a href="#"></a>month</li>
+                    <li><a href="#"></a>3month</li>
+                    <li><a href="#"></a>year</li>
+                </ul>
+            </nav>
+            <div class="bottomside">
+                <div class="con3_graph">
+    
+                </div>
+                <div class="con3_avg">
+                    <div class="avgBoxhr">
+                        <h4>avg&ensp;<span>Heart&ensp;Rate</span></h4>
+                        <p>90<sub>bpm</sub></p>
+                        <div class="statusHr">
+                            <div class="circle">
+        
+                            </div>
+                            &ensp;<h5>Normal average rate</h5>
+                        </div>
+                    </div>
+                    <div class="avgBoxSpo2">
+                        <div class="leftspo2">
+                            <h4>avg</h4>
+                            <span>Spo2</span>
+                        </div>
+                        <div class="circle-container">
+                            <svg class="progress-circle" viewBox="0 0 36 36">
+                                <path
+                                    class="circle-bg"
+                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32"
+                                ></path>
+                                <path
+                                    class="circle-progress"
+                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32"
+                                    stroke-dasharray="100, 100"
+                                ></path>
+                            </svg>
+                            <div class="circle-text">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------script-------------------- -->
+
+<script>
+    function updateProgress(percent) {
+        const progress = document.querySelector('.circle-progress');
+        progress.style.strokeDasharray = `${percent}, 100`;
+        document.querySelector('.circle-text').textContent = `${percent}%`;
+    }
+
+    updateProgress(90); 
+</script>
+
+
+</body>
+</html>
