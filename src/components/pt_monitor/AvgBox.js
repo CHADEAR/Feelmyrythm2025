@@ -3,11 +3,11 @@ import "./pt_monitor.css";
 
 const AvgBox = () => {
   useEffect(() => {
-    const percent = 95; // กำหนดค่าเปอร์เซ็นต์เริ่มต้นที่ 95%
+    const percent = 95;
     const progress = document.querySelector('.circle-progress');
-    progress.style.strokeDasharray = `${percent}, 100`; // กำหนดค่า strokeDasharray ให้ตรงกับเปอร์เซ็นต์ที่กำหนด
-    document.querySelector('.circle-text').textContent = `${percent}%`; // อัปเดตข้อความแสดงเปอร์เซ็นต์
-  }, []); // ทำเพียงครั้งเดียวเมื่อคอมโพเนนต์ถูกโหลด
+    progress.style.strokeDasharray = `${percent}, 100`; 
+    document.querySelector('.circle-text').textContent = `${percent}%`; 
+  }, []); 
 
   return (
     <div className="con3_avg">
