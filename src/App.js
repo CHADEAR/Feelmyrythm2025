@@ -7,11 +7,12 @@ import PtList from './pages/patient_list.jsx';
 import CreateUser from './components/patient_list/CreateUser.jsx'
 import Users from './components/patient_list/Users.jsx'
 import UpdateUser from './components/patient_list/UpdateUser.jsx'
-import LoginForDoctor from "../components/LoginRegister/LoginForDoctor";
-import LoginForNurse from "../components/LoginRegister/LoginForNurse";
-import LoginForUser from "../components/LoginRegister/LoginForUser";
-import RegisterPage from "../components/LoginRegister/RegisterPage";
-import ForgotPassPage from "../components/LoginRegister/ForgotPassPage";
+// import LoginForDoctor from "../components/LoginRegister/LoginForDoctor";
+// import LoginForNurse from "../components/LoginRegister/LoginForNurse";
+// import LoginForUser from "../components/LoginRegister/LoginForUser";
+// import RegisterPage from "../components/LoginRegister/RegisterPage";
+// import ForgotPassPage from "../components/LoginRegister/ForgotPassPage";
+import LoginRegister from './pages/LoginRegister.js'
 
 
 
@@ -27,11 +28,13 @@ function App() {
         <Route path='/create' element={<CreateUser />}></Route>
         <Route path='/update' element={<UpdateUser />}></Route>
 
-        <Route path="/doctor-login" element={<LoginForDoctor />} />
+        <Route path='/register' element={<LoginRegister />}></Route>
+        
+        {/* <Route path="/doctor-login" element={<LoginForDoctor />} />
         <Route path="/nurse-login" element={<LoginForNurse />} />
         <Route path="/user-login" element={<LoginForUser />} />
         <Route path="/user-register" element={<RegisterPage />} />
-        <Route path="/user-forgotpass" element={<ForgotPassPage />} />
+        <Route path="/user-forgotpass" element={<ForgotPassPage />} /> */}
       </Routes>
     </Router>
   );
