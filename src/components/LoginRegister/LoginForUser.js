@@ -21,7 +21,7 @@ const LoginForUser = () => {
                     <div className="user-login">
                         <div className="navigation">
                             <div className="user-img-box">
-                                <img src="/components/userpage.png" alt="" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/picture-94563.appspot.com/o/feelmyrythm2024_pics%2Fuserpage.png?alt=media&token=863da787-643c-4d2f-9721-0c36ba791020" alt="" />
                             </div>
                             <ul>
                                 <li className="list">

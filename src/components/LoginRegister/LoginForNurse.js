@@ -21,7 +21,7 @@ const LoginForNurse = () => {
                     <div className="nurse-login">
                         <div className="navigation">
                             <div className="nurse-img-box">
-                                <img src="/components/nursepage.png" alt="" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/picture-94563.appspot.com/o/feelmyrythm2024_pics%2Fnursepage.png?alt=media&token=c5ff0cec-5c34-4bdf-ab53-b69db4f62b38" alt="" />
                             </div>
                             <ul>
                                 <li className="list">
