@@ -7,14 +7,11 @@ import PtList from './pages/patient_list.jsx';
 import CreateUser from './components/patient_list/CreateUser.jsx'
 import Users from './components/patient_list/Users.jsx'
 import UpdateUser from './components/patient_list/UpdateUser.jsx'
-// import LoginForDoctor from "../components/LoginRegister/LoginForDoctor";
-// import LoginForNurse from "../components/LoginRegister/LoginForNurse";
-// import LoginForUser from "../components/LoginRegister/LoginForUser";
-// import RegisterPage from "../components/LoginRegister/RegisterPage";
-// import ForgotPassPage from "../components/LoginRegister/ForgotPassPage";
-import LoginRegister from './pages/LoginRegister.js'
-
-
+import LoginForDoctorPage from './pages/LoginForDoctorPage.js';
+import LoginForNursePage from './pages/LoginForNursePage.js';
+import LoginForUserPage from './pages/LoginForUserPage.js';
+import RegisterForUserPage from './pages/RegisterForUserPage.js';
+import ForgotPassPageForUser from './pages/ForgotPassPageForUser.js';
 
 function App() {
   return (
@@ -27,14 +24,12 @@ function App() {
         <Route path='/user' element={<Users />}></Route>
         <Route path='/create' element={<CreateUser />}></Route>
         <Route path='/update' element={<UpdateUser />}></Route>
+        <Route path="/doctor-login" element={<LoginForDoctorPage />} />
+        <Route path="/nurse-login" element={<LoginForNursePage />} />
+        <Route path="/user-login" element={<LoginForUserPage />} />
+        <Route path="/user-register" element={<RegisterForUserPage />} />
+        <Route path="/user-forgotpass" element={<ForgotPassPageForUser />} />
 
-        <Route path='/register' element={<LoginRegister />}></Route>
-        
-        {/* <Route path="/doctor-login" element={<LoginForDoctor />} />
-        <Route path="/nurse-login" element={<LoginForNurse />} />
-        <Route path="/user-login" element={<LoginForUser />} />
-        <Route path="/user-register" element={<RegisterPage />} />
-        <Route path="/user-forgotpass" element={<ForgotPassPage />} /> */}
       </Routes>
     </Router>
   );
