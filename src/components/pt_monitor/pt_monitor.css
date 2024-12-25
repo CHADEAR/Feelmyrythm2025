@@ -383,3 +383,121 @@ margin-left: 10px;
 .leftspo2 span{
     color: #0261c6;
 }
+
+
+
+
+/* ------------- theme ----------------- */
+
+/* Light Theme */
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  /* Apply Variables */
+  body, .bodycon {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .theme-toggle-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .theme-toggle-btn:hover {
+    opacity: 0.8;
+  }
+
+
+/* Toggle Switch */
+.toggle-switch {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #012041;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(25px);
+  }
+  
+  .dark-theme .infor {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-theme .record{
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-theme .container2 .box{
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-theme .container3{
+    background-color: #333;
+    color: #fff; 
+}
+
+.dark-theme .avgBoxhr{
+    background-color: #525252; 
+    color: #fff; 
+}
+.dark-theme .avgBoxSpo2{
+    background-color: #525252; 
+    color: #fff;
+}
+
+/* ----------------------------------- */

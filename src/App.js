@@ -13,7 +13,6 @@ import LoginForUserPage from './pages/LoginForUserPage.js';
 import RegisterForUserPage from './pages/RegisterForUserPage.js';
 import ForgotPassPageForUser from './pages/ForgotPassPageForUser.js';
 
-
 function App() {
   return (
     <Router> 
@@ -25,12 +24,12 @@ function App() {
         <Route path='/user' element={<Users />}></Route>
         <Route path='/create' element={<CreateUser />}></Route>
         <Route path='/update' element={<UpdateUser />}></Route>
-
         <Route path="/doctor-login" element={<LoginForDoctorPage />} />
         <Route path="/nurse-login" element={<LoginForNursePage />} />
         <Route path="/user-login" element={<LoginForUserPage />} />
         <Route path="/user-register" element={<RegisterForUserPage />} />
         <Route path="/user-forgotpass" element={<ForgotPassPageForUser />} />
+
       </Routes>
     </Router>
   );
