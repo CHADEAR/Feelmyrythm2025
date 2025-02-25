@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPM Waveform Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>BPM Waveform</h1>
+  <canvas id="bpmChart" width="800" height="400"></canvas>
+  
+  <script>
+    // ตัวแปรสำหรับเก็บข้อมูล BPM
+    let bpmData = [];
+    let timeLabels = [];
+    let maxDataPoints = 100;  // จำนวนจุดข้อมูลสูงสุดที่เก็บไว้ในกราฟ
+
+    // สร้างกราฟ
+    const ctx = document.getElementById('bpmChart').getContext('2d');
+    const bpmChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: timeLabels,
+        datasets: [{
+          label: 'BPM',
+          data: bpmData,
+          borderColor: 'rgba(255, 0, 0, 1)',
+          backgroundColor: 'rgba(255, 0, 0, 1)',
+          borderWidth: 1,
+          fill: false,  // เติมสีให้กราฟดูคล้ายคลื่น
+          tension: 0.4,
+          pointRadius: 0  // ทำให้กราฟดูนุ่มนวล คล้ายคลื่น
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            min: 0,
+            max: 200,  // กำหนดค่าสูงสุดของ BPM ที่จะแสดง (ปรับได้)
+            ticks: {
+              stepSize: 20  // กำหนดช่วงระยะของการแสดงผลบนแกน Y
+            }
+          }
+        },
+        responsive: true
+      }
+    });
+
+    // ฟังก์ชันจำลองข้อมูล BPM และเพิ่มเข้าไปในกราฟ
+    let counter = 0;
+    function addDataToChart() {
+      const bpm = Math.floor(Math.random() * (180 - 60 + 1)) + 60;  // สุ่ม BPM ระหว่าง 60 ถึง 180
+      const time = new Date().toLocaleTimeString();  // เวลาในรูปแบบ "hh:mm:ss"
+
+      // หากจำนวนข้อมูลมากกว่าจำนวนที่ต้องการให้ลบข้อมูลเก่า
+      if (bpmData.length >= maxDataPoints) {
+        bpmData.shift();
+        timeLabels.shift();
+      }
+
+      bpmData.push(bpm);
+      timeLabels.push(time);
+
+      // อัปเดตกราฟ
+      bpmChart.update();
+    }
+
+    // เรียกฟังก์ชันทุกๆ 1000ms (1 วินาที) เพื่อเพิ่มข้อมูล BPM ใหม่
+    setInterval(addDataToChart, 1000);
+  </script>
+</body>
+</html>
