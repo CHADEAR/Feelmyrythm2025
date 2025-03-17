@@ -12,13 +12,17 @@ import LoginForNursePage from './pages/LoginForNursePage.js';
 import LoginForUserPage from './pages/LoginForUserPage.js';
 import RegisterForUserPage from './pages/RegisterForUserPage.js';
 import ForgotPassPageForUser from './pages/ForgotPassPageForUser.js';
+import HomePagee from './pages/homepage2';
+import Monitorr from './pages/Monitor';
 
 function App() {
   return (
     <Router> 
       <Routes> 
-        <Route path="/" element={<HomePage />} /> 
-        <Route path="/pt-monitor" element={<PtMonitor />} />
+        {/* <Route path="/" element={<HomePage />} />          */}
+        <Route path="/" element={<HomePagee />} />
+        <Route path="/monitor" element={<Monitorr />} />
+        {/* <Route path="/pt-monitor" element={<PtMonitor />} /> */}
         <Route path="/pt-list" element={<PtList />} />
         
         <Route path='/user' element={<Users />}></Route>

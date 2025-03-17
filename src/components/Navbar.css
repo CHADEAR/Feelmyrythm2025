@@ -1,79 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
-.mainNav{
+.nav{
     width: 100%;
     height: 10vh;
-    background: #2A3863;
-    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 40px 40px 40px;
+    padding: 0px 5% 0px 5%;
+    background-color: #2A3863;
+    z-index: 1;
+}
+.Nav_logo img{
+    width: 2.5rem;
 }
 
-a{
-    color: #fff;
-}
-
-.rightnav{
+.left_Navitem{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin-right: 10px;
-    align-items: center;
-}
-
-.list-group-item {
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
-    position: relative;
-}
-
-.list-group-item::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1.5px;
-    background: #f9f9f9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.5s;
-}
-
-.list-group-item:hover::after,
-.list-group-item.active::after {
-    width: 100%;
-}
-
-
-.leftnav{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+    column-gap: 5%;
+    width: 50%;
+    color: white;
     align-items: center;
 }
 
-.signin-login{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.right_Nav{
+    width: 35%;
 }
 
-.signin-login i{
-    font-size: 20px;
+.menu_list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu_list a{
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* แสดง hamburger เมื่อลดขนาดหน้าจอ */
+@media screen and (max-width: 550px) {
+    .menu_list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #EEF7FF;
+        text-align: center;
+    }
+
+    /* แสดงเมนูเมื่อมีการคลิก */
+    .menu_list ul.active {
+        display: flex;
+    }
+
+    .menu_list ul li {
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu_list a {
+        color: #2A3863;
+    }
 }

@@ -1,26 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'; 
 import 'boxicons/css/boxicons.min.css'; 
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  // ฟังก์ชันที่ใช้ในการสลับสถานะของเมนู
+  const toggleMenu = () => {
+    setIsMenuActive(prevState => !prevState);
+  };
+
   return (
-    <nav className="mainNav">
-      <div className="leftnav">
-        <img src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/Logo%20icon%20(1).png?alt=media&token=dab0faf1-4d39-4494-9a52-d898981cccd7" alt="Logo" style={{ width: '38px', height: 'auto' }} />
-        <span>Feel my Rhythm</span>
-      </div>
-      <div className="rightnav">
-        <Link to="/" className="list-group-item">Home</Link>
-        <Link to="/pt-monitor" className="list-group-item">How it Works</Link>
-        <Link to="/pt-list" className="list-group-item">list</Link>
-        <a href="#" className="list-group-item">Contact Us</a>
-        <div className="signin-login">
-          <a href="#"><i className='bx bxs-user'></i></a>
-          <a href="#"><span>Sign in</span></a>
+    <div className="nav">
+      <div className="left_Navitem">
+        <div className="Nav_logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/Logo%20icon%20(1).png?alt=media&token=dab0faf1-4d39-4494-9a52-d898981cccd7"
+            className="logo"
+            alt="Logo"
+          />
+        </div>
+        <div className="Nav_tx">
+          <p>Feel&ensp;My&ensp;Rythm</p>
         </div>
       </div>
-    </nav>
+      <div className="right_Nav">
+        <div className="menu_list">
+          <ul className={isMenuActive ? 'active' : ''}>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/monitor">Monitor</Link></li>
+            <li><Link to="#">Login</Link></li>
+          </ul>
+          <div className="hamburger" onClick={toggleMenu}>
+            ☰
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

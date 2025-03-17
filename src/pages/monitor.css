@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5% 0px 5%;
+    background-color: #2A3863;
+    z-index: 1;
+}
+.Nav_logo img{
+    width: 2.5rem;
+}
+
+.left_Navitem{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    width: 50%;
+    color: white;
+    align-items: center;
+}
+
+.right_Nav{
+    width: 35%;
+}
+
+.menu_list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.menu_list a{
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.con1_monitor{
+    width: 100%;
+    height:90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.leftside_monitor{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+.infor_monitor{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #edd3d3;
+    height: 60%;
+    border-radius: 15px;
+    border-radius: 15px;
+}
+
+.infor_tx{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(163, 203, 239); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.infor_tx span{
+    margin-top: 6%;
+}
+
+.infor_tx img{
+    width: 5rem;
+}
+
+.feed_box{
+    width: 100%;
+    /* background-color: aliceblue; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5%;
+    justify-content: center;
+}
+
+.feed_box .feedbox_box{    
+    align-self: center;
+}
+
+.feed_tx{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(12%, 10%);
+}
+
+.feedbox_box{
+    background-color: rgb(249, 231, 231);
+    width: 80%;
+    height: 65%;
+    border-radius: 15px;
+    border: solid 1px black;
+}
+
+.feed_tx_img{
+    width: 1.2rem;
+}
+
+.rec_monitor{
+    margin-top: 5%;
+    width: 80%;
+    height: 35%;
+    background-color: #edd3d3;
+    padding: 7% 10% 7% 10%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.rec_tx{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.rightside_monitor{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bpm_con{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.box1{
+    border-left: 5px solid #FFE142;
+}
+.box2{
+    border-left: 5px solid #516CFA;
+}
+.box3{
+    border-left: 5px solid #75F213;
+}
+
+.bpm_con .box{
+    width: 50%;
+    max-width: 320px;
+    height: 100%;
+    background-color: rgb(229, 248, 242);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_itemm{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20%;
+    align-items: center;
+}
+
+.bpm_box img{
+    width: 3.5rem;
+}
+
+.spo2_box img{
+    width: 5rem;
+    margin-left: -7%;
+}
+
+.Pao2_box img{
+    width: 2.5rem;
+}
+.Pao2_rate span{
+    font-size: 1.2rem;
+}
+.mmhg2{
+    margin-left: 23.5%;
+}
+
+.box h4{
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.box p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.bpm_box,.spo2_box span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.heartrate_gp_con{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.95%;
+    margin-left: 0.5%;
+}
+
+.gp_box{
+    width: 65%;
+    height: 90%;
+    background-color: rgb(224, 250, 250);
+    border-radius: 15px;
+    
+
+}
+
+.avg_box{
+    width: 29.5%;
+    height: 90%;
+    background-color: rgb(238, 249, 227);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10%;
+}
+
+.avgBoxhr{
+    width: 200px;
+    height: 16vh;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.avgBoxhr span{
+    color: #FAD304;
+}
+
+.avgBoxhr p{
+    font-size: 30px;
+    margin-left: 17px;
+}
+
+.avgBoxhr sub{
+font-size: 15px;
+margin-left: 10px;
+}
+
+.statusHr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #75F213;
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+    width: 80px; /* ความกว้างของวงกลม */
+    height: 80px; /* ความสูงของวงกลม */
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee; 
+    stroke-width: 2;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: #4caf50;
+    stroke-width: 2;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+}
+
+.circle-text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.avgBoxSpo2{
+    width: 200px;
+    height: 16vh;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftspo2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.leftspo2 span{
+    color: #0261c6;
+}
+
+@media screen and (max-width: 550px) {
+    .con1_monitor{
+        flex-direction: column;
+        margin-bottom: 5%;       
+    }
+    .leftside_monitor{
+        display: none;
+    }
+    .rightside_monitor{
+        width: 100%;
+        height: 100%;
+    }
+    .bpm_con{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .bpm_con .box{
+        width: 90%;
+        height: 50%;
+    }
+    .heartrate_gp_con{
+        display: none;
+    }
+
+    .menu_list ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color:#EEF7FF;
+        text-align: center;
+    }
+
+    .menu_list ul.active {
+        display: flex;
+    }
+
+    .menu_list ul li {
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+        float: right;
+        font-size: 1.5rem;
+    }
+
+    .menu_list a{
+        color: #2A3863;
+    }
+    
+}
