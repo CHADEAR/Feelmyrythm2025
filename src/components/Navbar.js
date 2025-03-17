@@ -11,7 +11,7 @@ const Navbar = () => {
         <span>Feel my Rhythm</span>
       </div>
       <div className="rightnav">
-        <a href="#" className="list-group-item active">Home</a>
+        <Link to="/" className="list-group-item">Home</Link>
         <Link to="/pt-monitor" className="list-group-item">How it Works</Link>
         <Link to="/pt-list" className="list-group-item">list</Link>
         <a href="#" className="list-group-item">Contact Us</a>
