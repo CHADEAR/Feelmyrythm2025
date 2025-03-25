@@ -246,6 +246,7 @@ section .doctor-login-formcontrol button {
     padding: 10px 0;
     margin-top: 30px;
     transition: 500ms;
+    text-decoration: none;
 }
 
 section .doctor-login-formcontrol h2 {
