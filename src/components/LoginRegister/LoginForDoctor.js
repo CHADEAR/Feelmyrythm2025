@@ -4,16 +4,15 @@ import './LoginForDoctor.css';
 
 const LoginForDoctor = () => {
     useEffect(() => {
-        console.log("Component mounted");
-        // Add active class in selected list item
-        const list = document.querySelectorAll('.list');
-        list.forEach((item) => {
-            item.onclick = () => {
-                list.forEach(el => el.className = 'list'); // Reset all classes
-                item.className = 'list active'; // Set active class
-            };
-        });
-    }, []); // Empty dependency array ensures it runs once on mount
+            // add active class in selected list item
+            const list = document.querySelectorAll('.list');
+            list.forEach((item) => {
+                item.onclick = () => {
+                    list.forEach(el => el.className = 'list'); // Reset all classes
+                    item.className = 'list active'; // Set active class
+                };
+            });
+    }, []); // Empty dependency array to ensure it runs once on component mount
 
     return (
         <div>
@@ -32,13 +31,13 @@ const LoginForDoctor = () => {
                                         <span className="title">DOCTOR</span>
                                     </Link>
                                 </li>
-                                <li className="list">
+                                {/* <li className="list">
                                     <b></b>
                                     <b></b>
                                     <Link to="/nurse-login">
                                         <span className="title">NURSE</span>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className="list">
                                     <b></b>
                                     <b></b>
@@ -69,7 +68,52 @@ const LoginForDoctor = () => {
                                         </div>
                                         <input type="password" placeholder="Password" />
                                     </div>
-                                    <button type="submit">Login</button>
+                                    <button type="submit"><Link to ="/monitor">Login</Link></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="doctor-login-container-phone">
+                    <div className="doctor-login-phone">
+                        <div className="navigation-phone">
+                            <div className="doctor-img-box-phone">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/picture-94563.appspot.com/o/feelmyrythm2024_pics%2Fdoctorpage.png?alt=media&token=8d6bb21b-c681-4f36-8cf6-506ddb7422cb" alt="" />
+                                <div className="doctor-imglogo">
+                                        <div className="doctor-circle">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/picture-94563.appspot.com/o/feelmyrythm2024_pics%2Fdoctoricon.svg?alt=media&token=8e9082bb-d2dd-49e8-a0d9-39fa3e69da89" alt="" /> 
+                                        </div>
+                                </div>
+                            </div>
+                            <div className="doctor-options">
+                                <Link to="/user-login">
+                                    <span class="list">User</span>
+                                </Link>
+                                <Link to="/">
+                                    <span class="list">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/picture-94563.appspot.com/o/feelmyrythm2024_pics%2Flogout-svgrepo-com.svg?alt=media&token=c187a124-576e-4f3f-a7f7-62f0b02d1676" alt="" />
+                                    </span>
+                                </Link>
+                            </div>
+                            <div className="doctor-label-phone">
+                                <span className="list active">Doctor</span> 
+                            </div>
+                        </div>
+                        <div className="doctor-login-formbox-phone">
+                            <form action="">
+                                <div className="doctor-login-formcontrol-phone">
+                                    <h2>LOG IN</h2>
+                                    <div className="doctor-login-group">
+                                        <div className="doctor-form-group">
+                                            <input type="text" id="username" placeholder="Username" />
+                                        </div>
+                                        <div className="doctor-form-group">
+                                            <input type="password" id="password" placeholder="Password" />
+                                        </div>
+                                        <button type="submit"><Link to ="/monitor">Login</Link></button>
+                                        <p>Don't have an Account? <Link to ="/user-register">Sign up</Link></p>
+                                    </div>
                                 </div>
                             </form>
                         </div>

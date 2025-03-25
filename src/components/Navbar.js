@@ -30,7 +30,7 @@ const Navbar = () => {
           <ul className={isMenuActive ? 'active' : ''}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/monitor">Monitor</Link></li>
-            <li><Link to="#">Login</Link></li>
+            <li><Link to="/user-doctor">Login</Link></li>
           </ul>
           <div className="hamburger" onClick={toggleMenu}>
             ☰

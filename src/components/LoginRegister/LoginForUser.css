@@ -282,4 +282,192 @@ section .user-formcontrol p a {
     font-weight: 600;
 }
 
+section .user-container-phone {
+    display: none;
+}
+
+@media screen and (max-width: 431px) {
+    section .user-container {
+        display: none;
+    }
+    body, html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+    section .user-container-phone {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        padding: 0; 
+        /* overflow: hidden; */
+        align-items: center;
+    }
+    section .user-img-box-phone {
+        width: 100%;
+        height: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section .user-img-box-phone img {
+        width: 100%;
+        height: 30%;
+        border-bottom-left-radius: 50% 20%;
+        border-bottom-right-radius: 50% 20%;
+        clip-path: ellipse(87% 80% at 47% 8%);
+    }
+    section .user-imglogo {
+        width: 25%;
+        height: auto;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 85%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    }
+    section .user-circle {
+        width: 200px;
+        height: auto;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    section .user-circle img {
+        width: 90px; /* ลดขนาดไอคอนเพื่อให้พอดีกับวงกลม */
+        height: 110px;
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+    }
+    section .user-label-phone {
+        position: relative; /* ให้มันเป็นจุดอ้างอิง */
+        text-align: center;
+        margin-top: 5px; /* เพิ่มระยะห่างจากไอคอน */
+        margin-left: -13px;
+    }
+    section .user-label-phone span {
+        color: black;
+        font-size: 23px;
+        font-weight: 500;
+        margin-top: 15px; /* เพิ่มระยะห่าง */
+    }
+    section .user-options {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 46px;
+        margin-top: -15px;
+        width: 73%;
+    }
+    .user-options span {
+        color: gray; /* gray */
+        font-size: 21px;
+        display: inline-block;
+        text-decoration: none !important;
+    }
+    .user-login-formbox-phone {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    .user-login-formbox-phone h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        margin-left: -12px;
+    }
+    .user-login-group {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .user-form-group {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .user-form-group input {
+        width: 70%;
+        padding: 15px;
+        border: none;
+        border-radius: 17px;
+        background-color: lightgrey; /* เปลี่ยนเป็นสีขาว */
+        font-size: 18px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มมิติ */
+        margin-top: 7px;
+        margin-left: -12px;
+    }
+    .user-form-group input::placeholder {
+        font-family: 'Poppins';
+        color: gray;
+        line-height: 1;
+        text-indent: 5px;
+    }
+    .user-login-group button {
+        display: block;
+        text-align: center;
+        width: 70%;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 23px;
+        border-radius: 20px;
+        background-color: skyblue;
+        color: black;
+        padding: 10px 0;
+        box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
+        margin-top: 95px;
+        margin-left: 54px;
+    }
+    .user-login-group p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 30px;
+        text-align: center;
+        color: black;
+        margin-left: -20px;
+    }
+    .user-login-group a {
+        font-size: 18px;
+        color: crimson;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .user-options img {
+        width: 25px;
+        height: 25px;
+    }
+    .user-login-group span a {
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        color: crimson;
+        position: absolute;
+        right: 10;
+        margin-top: 5px;
+    }
+
+}
 
