@@ -1,10 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
 }
 
 img{
@@ -85,7 +88,6 @@ img{
     font-size: 1.7vw;
 }
 
-
 .hdpic_hometx{
     width: 50%;
     height: 100%;
@@ -118,6 +120,10 @@ img{
     color: rgb(238, 240, 242);
 }
 
+.banner_dt {
+    text-align: center;
+  }
+
 .con3_features_homept{
     width: 100%;
     height: 70vh;
@@ -140,7 +146,7 @@ img{
 }
 
 .featurestx p{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 .featureslist{
@@ -156,11 +162,14 @@ img{
 .featureslist img{
     margin-top: 10%;
     margin-left: 10%;
+    ;
 }
 
 .txlist{
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 15%;
+    width: 70%;
+    font-size: 1vw;
 }
 
 .boxlist{
@@ -264,6 +273,9 @@ img{
         height: 35vh;
         flex-direction: column; 
         align-items: center;
+    }
+    .txlist{
+        font-size: 2.5vw;
     }
 
     .hdtx_homept, .hdpic_hometx {

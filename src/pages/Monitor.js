@@ -109,8 +109,15 @@ const Monitorr = () => {
               <i className="bx bxs-folder-open"></i>
               <span>Record</span>
             </div>
-            <div className="rec_box"></div>
-          </div>
+            <div className="rec_box">   
+            <img
+                  src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/QR.png?alt=media&token=9ec0ad6b-a395-4c4b-8820-1b8dab37cd61"
+                  className="QR_img"
+                  alt="QR code"
+                />         
+            </div>
+            
+        </div>
         </div>
 
         <div className="rightside_monitor">
@@ -215,7 +222,8 @@ const Monitorr = () => {
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </div>
+     </div>
+     
   );
 };
 

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
 }
 
 body{
@@ -156,6 +159,18 @@ body{
     display: flex;
     flex-direction: row;
     gap: 5%;
+    align-items: center;
+}
+
+
+.rec_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.QR_img{
+    width: 9rem;
 }
 
 .rightside_monitor{
@@ -218,8 +233,15 @@ body{
     font-size: 1.2rem;
 }
 .mmhg2{
-    margin-left: 23.5%;
+    margin-left: 35%;
 }
+
+.circle.red {
+    background-color: red;  /* สีแดง */
+  }
+.circle.green {
+    background-color: green;  /* สีเขียว */
+  }
 
 .box h4{
     margin-top: 30px;
@@ -368,6 +390,7 @@ margin-left: 10px;
 .leftspo2 span{
     color: #0261c6;
 }
+
 
 @media screen and (max-width: 550px) {
     .con1_monitor{

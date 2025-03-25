@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import "./homepage2.css";
 
 const HomePagee = () => {
+  
   return (
     <div>
       <Navbar />
@@ -24,19 +25,19 @@ const HomePagee = () => {
       </div>
       <div className="con2_banner_homept">
         <div className="bpmbox_banner box_banner">
-          <p className="banner_dt">Monitor Your Heart <br /> Rate for Health <br /> Checkups, Anytime</p>
+          <p className="banner_dt">Monitor Your Heart Rate, <br /> Oxygen Saturation <br />and Blood Pressure </p>
         </div>
         <div className="soundbox_banner box_banner">
-          <p className="banner_dt">Monitor Your Heart <br /> Rate for Health <br /> Checkups, Anytime</p>
+          <p className="banner_dt">Help Doctor diagnose <br /> by Heart Sound <br />using Audio Classifiacation</p>
         </div>
         <div className="analybox_banner box_banner">
-          <p className="banner_dt">Monitor Your Heart <br /> Rate for Health <br /> Checkups, Anytime</p>
+          <p className="banner_dt">Analysis Heart Sound<br /> in 3 categories :<br />Normal, Murmur and Stenosis</p>
         </div>
       </div>
       <div className="con3_features_homept">
         <div className="featurestx">
           <h3>FEATURES</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur cursus<br />Integer nec odio. Praesent libero. Sed cursus cursus</p>
+          <p>The key feature of our product is the ability to listen to <br />heartbeats and transmit relevant data to the monitor.</p>
         </div>
         <div className="featureslist">
           <div className="list1 boxlist">
@@ -46,7 +47,7 @@ const HomePagee = () => {
             />
             <div className="txlist">
               <span>Monitor</span>
-              <p>Integer nec odio. libero.<br /> Sed cursus ante dapibus diam.</p>
+              <p>displaying the  measurements of the body's basic functions before diagnosis, such as heart rate (BPM), oxygen saturation(SPO2) and blood pressure. </p>
             </div>
           </div>
           <div className="list2 boxlist">
@@ -55,8 +56,8 @@ const HomePagee = () => {
               alt="Feature 2"
             />
             <div className="txlist">
-              <span>Monitor</span>
-              <p>Integer nec odio. libero.<br /> Sed cursus ante dapibus diam.</p>
+              <span>Sound Analytics</span>
+              <p>helping doctor diagnose heart disease in 3 categories : Normal, Murmur and Stenosis by using audio classification on edge impulse</p>
             </div>
           </div>
         </div>
@@ -64,15 +65,15 @@ const HomePagee = () => {
       <div className="con4_howitw_homept">
         <div className="howtx">
           <h3>HOW ITS WORK ?</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam saepe ipsam facilis enim eligendi<br />
-          veritatis sequi eos consequatur unde sapiente consequatur unde sapiente eligendi <br />
-          quisquam exercitationem culpa aspernatur omnis ex, corporis explicabo soluta qui?
+          An electronic stethoscope circuit for listening to heartbeats in order<br /> to 
+           process and determine whether there are any irregularities  <br />in the heart's rhythm. 
+           It can record the sounds and use AI <br /> to detect abnormal heart sounds, such as murmurs.
         </div>
         <div className="vdo_howitw">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/pYn96ujbJX0?si=DOOneRroxBUvUAaU"
+            src="https://firebasestorage.googleapis.com/v0/b/feelmyrythm-c4796.appspot.com/o/heart-s.mp4?alt=media&token=d5d0391c-13b5-42ea-be83-b54e8645f074"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -87,17 +88,17 @@ const HomePagee = () => {
           <div className="contact-box-item">
             <i className="bx bx-envelope" style={{ color: "#393a3a" }}></i>
             <br />
-            <span>Lorem ipsum dolor<br />sit amet consectetur</span>
+            <span>Email<br />65010204@kmitl.ac.th</span>
           </div>
           <div className="contact-box-item">
             <i className="bx bxs-phone" style={{ color: "#393a3a" }}></i>
             <br />
-            <span>Lorem ipsum dolor<br />sit amet consectetur</span>
+            <span>Phone<br />082292xxxx</span>
           </div>
           <div className="contact-box-item">
             <i className="bx bxs-map" style={{ color: "#393a3a" }}></i>
             <br />
-            <span>Lorem ipsum dolor<br />sit amet consectetur</span>
+            <span>Location<br />KMITL</span>
           </div>
         </div>
       </div>
