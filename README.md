@@ -26,7 +26,7 @@ The IoT device serves as a measuring instrument equipped with a speaker.
 ### Frontend  
 1. Install dependencies:  
    npm install
-2. run project
+2. run project:
    npm start
 
 ### backend
